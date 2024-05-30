@@ -22,11 +22,11 @@
                                     <input type="text" class="form-control" id="last_name" name="last_name" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="DOB">Employee DOB</label>
+                                    <label for="DOB">Employee Date of birth</label>
                                     <input type="date" class="form-control" id="DOB" name="DOB" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="phone">Phone</label>
+                                    <label for="phone">Phone Number</label>
                                     <input type="text" class="form-control" id="phone" name="phone" required>
                                 </div>  
                             </div>

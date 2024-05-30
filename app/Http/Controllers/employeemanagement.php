@@ -15,6 +15,7 @@ class employeemanagement extends Controller
         return view('employee.index', compact('employees'));
     }
 
+    
     public function store(Request $request)
     {
         // Validate the input
