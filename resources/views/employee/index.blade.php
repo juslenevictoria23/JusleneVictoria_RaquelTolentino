@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow-lg">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-custom bg-red text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
                     <div class="card-body bg-white">
