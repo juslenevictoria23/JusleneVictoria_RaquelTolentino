@@ -9,7 +9,7 @@
                     <div class="card-header bg-custom bg-purple text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
-                    <div class="card-body bg-white">
+                    <div class="card-body bg-gray">
                         <form method="POST" action="{{ route('employee.store') }}">
                             @csrf
                             <div class="form-row">
@@ -31,7 +31,7 @@
                                 </div>  
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-custom bg-red btn-block">Register</button>
+                                <button type="submit" class="btn btn-custom bg-blue btn-block">Register</button>
                             </div>
                         </form>
                     </div>
