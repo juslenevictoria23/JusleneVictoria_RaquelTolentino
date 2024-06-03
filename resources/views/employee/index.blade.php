@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="card mt-5 shadow-lg">
-                    <div class="card-header bg-custom bg-red text-white">
+                    <div class="card-header bg-custom bg-yellow text-white">
                         <h4 class="mb-0">Employee List</h4>
                     </div>
                     <div class="card-body bg-white">
