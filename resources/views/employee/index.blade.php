@@ -27,12 +27,23 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="phone">Phone Number</label>
-                                    <input type="text" class="form-control" id="phone" name="phone" required>
+                                    <input type="number" class="form-control" id="phone" name="phone" required>
                                 </div>  
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-custom bg-gray btn-block">Register</button>
                             </div>
+                            <script>
+        function allowOnlyLetters(input) {
+            input.addEventListener('input', function () {
+                this.value = this.value.replace(/[^a-zA-Z]/g, '');
+            });
+        }
+
+        // Apply the function to both first name and last name input fields
+        allowOnlyLetters(document.getElementById('first_name'));
+        allowOnlyLetters(document.getElementById('last_name'));
+    </script>
                         </form>
                     </div>
                 </div>
