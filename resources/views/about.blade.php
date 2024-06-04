@@ -1,10 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card mt-5 shadow-lg">
+<div>
+<a style="margin-left:1300px; margin-top:40px; padding:11px;" href="{{ route('employee.index') }}" class="btn btn-warning btn-sm">
+                                            <i class="fa fa-pencil-square-o"></i> Add
+                                        </a>
+</div>
+<div class="card mt-4 shadow-lg " style="margin:30px;">
+
+
                     <div class="card-header bg-gray">
                         <h4 class="mb-0 text-white">Employee List</h4>
                     </div>
+
+                  
                     <div class="card-body bg-white">
                         <table class="table table-bordered table-striped">
                             <thead class="thead-custom bg-gray">
