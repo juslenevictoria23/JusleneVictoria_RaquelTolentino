@@ -36,7 +36,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('employee/{id}', [App\Http\Controllers\employeemanagement::class, 'destroy'])->name('employee.destroy');
     Route::get('/employee', [\App\Http\Controllers\employeemanagement::class, 'index'])->name('employee.index');
     Route::post('/employee', [\App\Http\Controllers\employeemanagement::class, 'store'])->name('employee.store');
-    Route::get('/home', [\App\Http\Controllers\employeemanagement::class, 'index'])->name('home');
+    Route::get('/about', [\App\Http\Controllers\employeemanagement::class, 'index'])->name('about');
     
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
