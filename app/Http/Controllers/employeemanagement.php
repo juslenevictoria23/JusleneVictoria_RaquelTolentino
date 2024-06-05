@@ -12,6 +12,7 @@ class employeemanagement extends Controller
         $employees = Employee::all();
         return view('employee.index', compact('employees'));
     }
+
     public function table()
     {
         $employees = Employee::all();
@@ -23,7 +24,7 @@ class employeemanagement extends Controller
     {
         $this->validateInput($request);
 
-        $keys = ['name',  'email', 'address','status'];
+        $keys = ['name', 'email', 'password', 'confirm_password']; // Updated field names
         $input = $this->createQueryInput($keys, $request);
 
         Employee::create($input);
@@ -44,7 +45,7 @@ class employeemanagement extends Controller
 
         $employee = Employee::findOrFail($id);
 
-        $keys = ['name',  'email', 'address','status'];
+        $keys = ['name', 'email', 'password', 'confirm_password']; // Updated field names
         $input = $this->createQueryInput($keys, $request);
 
         $employee->update($input);
@@ -66,8 +67,8 @@ class employeemanagement extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'address' => 'required|string|max:255',
-            'status' => 'required|string|max:255',
+            'password' => 'required|string|min:8',
+            'confirm_password' => 'required|string|min:8|same:password', // Validation for confirm password
         ]);
     }
 

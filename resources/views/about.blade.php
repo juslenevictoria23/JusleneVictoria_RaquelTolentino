@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <!-- Content Header (Page header) -->
+   <h1 style="margin-left:30px; margin-bottom:10px;">Users</h1>
+    <!-- /.content-header -->
 <div>
 <a style="margin-left:1300px; margin-top:40px; padding:11px;" href="{{ route('employee.index') }}" class="btn btn-warning btn-sm">
                                             <i class="fa fa-pencil-square-o"></i> Add
@@ -21,8 +25,8 @@
                                 <th scope="col">#</th>
                                 <th scope="col">name</th>
                                 <th scope="col">email</th>
-                                <th scope="col">Address</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">password</th>
+                                <th scope="col">Confirm Password</th> <!-- Updated column name -->
                                 <th scope="col">Action</th>
                               </tr>
                             </thead>
@@ -32,8 +36,8 @@
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $employee->name }}</td>
                                     <td>{{ $employee->email }}</td>
-                                    <td>{{ $employee->address   }}</td>
-                                    <td>{{ $employee->status }}</td>
+                                    <td>{{ str_repeat('*', strlen($employee->password)) }}</td> <!-- Display asterisks instead of password -->
+                                    <td>{{ str_repeat('*', strlen($employee->confirm_password)) }}</td> <!-- Updated field -->
                                     <td>
                                         <a href="{{ route('employee.edit', $employee->id) }}" class="btn btn-warning btn-sm">
                                             <i class="fa fa-pencil-square-o"></i> Edit

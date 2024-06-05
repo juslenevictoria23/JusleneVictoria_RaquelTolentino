@@ -1,49 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
- 
+   <!-- Content Header (Page header) -->
+   <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">{{ __('Dashboard') }}</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+  
 
           
-    <!-- Main content -->
-    <div class="container">
-        <div class="card mt-5 shadow-lg">
-            <div class="card-header bg-custom bg-red text-white">
-                <h4 class="mb-0">Employee List</h4>
-            </div>
-            <div class="card-body bg-white">
-                <form id="employee-action-form" method="POST">
-                    @csrf
-                    <div class="row">
-                        @foreach ($employees as $key => $employee)
-                            <div class="col-md-4 mb-4">
-                                <div class="card">
-                                    <img src="{{ asset('images/logo.png') }}" class="card-img-top rounded-circle employee-img" alt="Employee Picture">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><strong>Name:</strong>{{ $employee->name }}</h5>
-                                        <p class="card-text"><strong>Email:</strong> {{ $employee->email }}</p>
-                                        <p class="card-text"><strong>Address</Address>:</strong> {{ $employee->address }}</p>
-                                        <p class="card-text"><strong>Status:</strong> {{ $employee->status }}</p>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="action" id="edit-{{ $employee->id }}" value="edit-{{ $employee->id }}">
-                                            <label class="form-check-label" for="edit-{{ $employee->id }}">Edit</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="action" id="delete-{{ $employee->id }}" value="delete-{{ $employee->id }}">
-                                            <label class="form-check-label" for="delete-{{ $employee->id }}">Delete</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </form>
-                <button type="button" class="btn btn-primary" onclick="handleEmployeeAction()">Submit</button>
-            </div>
-        </div>
+
 
         <h3 align="center" class="mt-5">Employee Management</h3>
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <div class="card shadow-lg">
                     <div class="card-header bg-custom bg-blue text-white">
                         <h4 class="mb-0">Register Employee</h4>
@@ -61,16 +38,38 @@
                                     <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="address">Address</label>
-                                    <input type="text" class="form-control" id="address" name="address" required>
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="status">Status</label>
-                                    <select class="form-control" id="status" name="status" required>
-                                        <option value="active">Active</option>
-                                        <option value="inactive">Inactive</option>
-                                    </select>
+                                    <label for="password_confirmation">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
                                 </div>
+                                <div class="form-group col-md-12">
+    <label>Profile Picture</label><br>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture1" value="profile1.jpg">
+        <label class="form-check-label" for="profile_picture1"><img src="images/logo.png" alt="Profile Picture 1" class="rounded-circle" style="height: 100px; width: 100px;"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture2" value="profile2.jpg">
+        <label class="form-check-label" for="profile_picture2"><img src="images/logo.png" alt="Profile Picture 2" class="rounded-circle" style="height: 100px; width: 100px;"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture3" value="profile3.jpg">
+        <label class="form-check-label" for="profile_picture3"><img src="images/logo.png" alt="Profile Picture 3" class="rounded-circle" style="height: 100px; width: 100px;"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture4" value="profile4.jpg">
+        <label class="form-check-label" for="profile_picture4"><img src="images/logo.png" alt="Profile Picture 4" class="rounded-circle" style="height: 100px; width: 100px;"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture5" value="profile5.jpg">
+        <label class="form-check-label" for="profile_picture5"><img src="images/logo.png" alt="Profile Picture 5" class="rounded-circle" style="height: 100px; width: 100px;"></label>
+    </div>
+</div>
+
+            </div>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-custom bg-gray btn-block">Register</button>
@@ -78,8 +77,8 @@
                         </form>
                     </div>
                 </div>
-            </div>
-    
+            
+     
     <!-- /.content -->
 @endsection
 
@@ -168,10 +167,9 @@
           <!-- ./col -->
         </div>
           <!-- ./col -->
-        </div>
+        </>
           <!-- ./col -->
         </div>
 
         
-    <!-- /.content -->
 

@@ -10,5 +10,5 @@ class employee extends Model
     use HasFactory;
     protected $table = 'employees';
     protected $primarykey = 'id';
-    protected $fillable = ['name','email','address','status',];
+    protected $fillable = ['name','email','password','confirm_password',];
 }

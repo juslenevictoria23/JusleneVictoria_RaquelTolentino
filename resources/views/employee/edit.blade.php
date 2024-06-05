@@ -14,98 +14,7 @@
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
-    <div class="row" style="margin:10px;">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>1250</h3>
-
-                <p>Employees</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>7</h3>
-
-                <p>Department</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>5</h3>
-
-                <p>Divisions</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>244</h3>
-
-                <p>Country</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-            
-          </div>
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>80</h3>
-
-                <p>State</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>4008</h3>
-
-                <p>Cities</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-
-          <!-- /.content -->
+    <
 
 
     <div class="container">
@@ -130,16 +39,15 @@
                                     <input type="email" class="form-control" id="email" name="email" value="{{ $employee->email }}" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="address">Address</label>
-                                    <input type="text" class="form-control" id="address" name="address" value="{{ $employee->address }}" required>
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="{{ $employee->password }}" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="status">Status</label>
-                                    <select class="form-control" id="status" name="status" required>
-                                        <option value="active" {{ $employee->status == 'active' ? 'selected' : '' }}>Active</option>
-                                        <option value="inactive" {{ $employee->status == 'inactive' ? 'selected' : '' }}>Inactive</option>
-                                    </select>
+                                    <label for="password_confirmation">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" value="{{ $employee->confirm_password }}"required>
                                 </div>
+                             
+                        
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-secondary btn-block">Update</button>
@@ -180,13 +88,3 @@
         }
     </style>
 @endpush
-
-          <!-- ./col -->
-        </div>
-          <!-- ./col -->
-        </div>
-          <!-- ./col -->
-        </div>
-
-        
-    

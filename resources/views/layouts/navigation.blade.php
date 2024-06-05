@@ -32,16 +32,7 @@
             </li>
 
            
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('about') }}" class="nav-link">
-                    <i class="nav-icon far fa-address-card"></i>
-                    <p>
-                        {{ __('BSIT 3A Examiner') }}
-                    </p>
-                </a>
-            </li>
-        </ul>
+          
 
         
     </nav>
