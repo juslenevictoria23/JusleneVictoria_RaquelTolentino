@@ -5,6 +5,9 @@
     <!-- Content Header (Page header) -->
    <h1 style="margin-left:30px; margin-bottom:10px;">Users</h1>
     <!-- /.content-header -->
+     <div>  <a href="{{ route('employee.index') }}" style="margin-left:1100px; margin-bottom:-200px;" class="btn btn-warning btn-sm">
+                                            <i class="fa fa-pencil-square-o"></i> Add
+                                        </a></div>
 <div>
 <a style="margin-left:1290px; margin-top:40px; padding-left:20px;  padding-right:20px; color:black; background-color:orange;" href="{{ route('employee.index') }}" class="btn btn-warning btn-sm">
 <i class="fa fa-pencil-square-o"></i> Add</a>
