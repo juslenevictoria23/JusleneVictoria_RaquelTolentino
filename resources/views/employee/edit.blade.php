@@ -7,22 +7,22 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">{{ __('Dashboard') }}</h1>
+                    <h1 class="m-0">{{ __('Edit User') }}</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
 
-    <
+    
 
 
     <div class="container">
         <h3 align="center" class="mt-5">Edit Employee</h3>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card shadow-sm">
-                    <div class="card-header bg-secondary text-white">
+                    <div class="card-header bg-custom bg-orange text-white">
                         <h4 class="mb-0">Edit Employee</h4>
                     </div>
                     <div class="card-body bg-light">
@@ -40,17 +40,16 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" value="{{ $employee->password }}" required>
+                                    <input type="text" class="form-control" id="password" name="password" value="{{ $employee->password }}" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="password_confirmation">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" value="{{ $employee->confirm_password }}"required>
+                                    <input type="text" class="form-control" id="confirm_password" name="confirm_password" value="{{ $employee->confirm_password }}"required>
                                 </div>
                              
-                        
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-secondary btn-block">Update</button>
+                                <button type="submit" class="btn btn-custom bg-black btn-block">Update</button>
                             </div>
                         </form>
                     </div>

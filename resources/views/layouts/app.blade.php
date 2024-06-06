@@ -56,10 +56,10 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
-            <img src="{{ asset('images/logo.png') }}" alt="AdminLTE Logo"
+            <img src="{{ asset('images/logo.jfif') }}" alt="AdminLTE Logo"
                  class="brand-image img-circle elevation-3"
                  style="opacity: .8">
-            <span class="brand-text font-weight-light">JAMM TECH INNO.</span>
+            <span class="brand-text font-weight-light">VT Industry.</span>
         </a>
 
         @include('layouts.navigation')
@@ -88,7 +88,7 @@
             Anything you want
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2023-2024 <a href="https://adminlte.io">JAMM TECH INNOVATION</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2023-2024 <a href="https://adminlte.io">VT Industry.</a>.</strong> All rights reserved.
     </footer>
 </div>
 <!-- ./wrapper -->

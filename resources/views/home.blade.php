@@ -6,7 +6,10 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">{{ __('Dashboard') }}</h1>
+                <h1 class="m-0"><span style="font-size: larger">{{ __('Admin') }}</span>
+  <span style="font-size: smaller">{{ __('Control Panel') }}</span>
+</h1>
+
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -19,14 +22,14 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>1250</h3>
+                <h3>0</h3>
 
-                <p>Users</p>
+                <p>User's</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="{{ route('about') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('table_user') }}" class="small-box-footer">Table info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

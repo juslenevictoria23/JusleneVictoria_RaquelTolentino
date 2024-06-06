@@ -16,7 +16,7 @@ class employeemanagement extends Controller
     public function table()
     {
         $employees = Employee::all();
-        return view('about', compact('employees'));
+        return view('table_user', compact('employees'));
     }
 
     

@@ -11,18 +11,11 @@
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
-
-  
-
-          
-
-
-        <h3 align="center" class="mt-5">Employee Management</h3>
+        <h3 align="center" class="mt-6">Employee Management</h3>
         <div class="row justify-content-center">
-            <div class="col-md-9">
+            <div class="col-md-10">
                 <div class="card shadow-lg">
-                    <div class="card-header bg-custom bg-blue text-white">
+                    <div class="card-header bg-custom bg-orange text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
                     <div class="card-body bg-white">
@@ -39,47 +32,24 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <input type="text" class="form-control" id="password" name="password" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="password_confirmation">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
-                                </div>
-                                <div class="form-group col-md-12">
-    <label>Profile Picture</label><br>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture1" value="profile1.jpg">
-        <label class="form-check-label" for="profile_picture1"><img src="images/logo.png" alt="Profile Picture 1" class="rounded-circle" style="height: 100px; width: 100px;"></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture2" value="profile2.jpg">
-        <label class="form-check-label" for="profile_picture2"><img src="images/logo.png" alt="Profile Picture 2" class="rounded-circle" style="height: 100px; width: 100px;"></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture3" value="profile3.jpg">
-        <label class="form-check-label" for="profile_picture3"><img src="images/logo.png" alt="Profile Picture 3" class="rounded-circle" style="height: 100px; width: 100px;"></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture4" value="profile4.jpg">
-        <label class="form-check-label" for="profile_picture4"><img src="images/logo.png" alt="Profile Picture 4" class="rounded-circle" style="height: 100px; width: 100px;"></label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="profile_picture" id="profile_picture5" value="profile5.jpg">
-        <label class="form-check-label" for="profile_picture5"><img src="images/logo.png" alt="Profile Picture 5" class="rounded-circle" style="height: 100px; width: 100px;"></label>
-    </div>
-</div>
-
-            </div>
+                                    <input type="text" class="form-control" id="confirm_password" name="confirm_password" required>
+                                  </div>
+                               </div>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-custom bg-gray btn-block">Register</button>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-custom bg-black btn-block">Register</button>
                             </div>
                         </form>
                     </div>
                 </div>
+                </div>
+                
             
-     
-    <!-- /.content -->
+
 @endsection
 
 @push('css')
@@ -139,30 +109,7 @@
         }
     </style>
 @endpush
-<script>
-        function handleEmployeeAction() {
-            const form = document.getElementById('employee-action-form');
-            const selectedAction = document.querySelector('input[name="action"]:checked');
 
-            if (selectedAction) {
-                const action = selectedAction.value.split('-')[0];
-                const employeeId = selectedAction.value.split('-')[1];
-
-                if (action === 'edit') {
-                    window.location.href = `/employee/${employeeId}/edit`;
-                } else if (action === 'delete') {
-                    if (confirm('Are you sure you want to delete this employee?')) {
-                        form.action = `/employee/${employeeId}`;
-                        form.method = 'POST';
-                        form.innerHTML += '<input type="hidden" name="_method" value="DELETE">';
-                        form.submit();
-                    }
-                }
-            } else {
-                alert('Please select an action.');
-            }
-        }
-    </script>
 
           <!-- ./col -->
         </div>
@@ -173,3 +120,4 @@
 
         
 
+        
