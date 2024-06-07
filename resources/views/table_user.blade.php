@@ -13,7 +13,7 @@
 <div class="card mt-4 shadow-lg " style="margin:50px;">
 
 
-                    <div class="card-header bg-orange">
+                    <div class="card-header bg-blue">
                         <h4 class="mb-0 text-white">Employee List</h4>
                     </div>
 
