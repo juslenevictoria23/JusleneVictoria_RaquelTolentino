@@ -7,7 +7,7 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                 <h1 class="m-0"><span style="font-size: larger">{{ __('Admin') }}</span>
-  <span style="font-size: smaller">{{ __('Control Panel') }}</span>
+  <span style="font-size: smaller">{{ __('Dashboard') }}</span>
 </h1>
 
                 </div><!-- /.col -->
