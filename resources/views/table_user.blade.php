@@ -8,7 +8,7 @@
     
 <div>
 <a style="margin-left:1290px; margin-top:40px; padding-left:20px;  padding-right:20px; color:black; background-color:orange;" href="{{ route('employee.index') }}" class="btn btn-warning btn-sm">
-<i class="fa fa-pencil-square-o"></i>Add</a>
+<i class="fa fa-pencil-square-o"></i>Add </a>
 </div>
 <div class="card mt-4 shadow-lg " style="margin:50px;">
 
