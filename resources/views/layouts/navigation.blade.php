@@ -30,7 +30,7 @@
                 <a href="{{ route('employee.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        {{ __('Bsit3b Examination') }}
+                        {{ __('Users') }}
                     </p>
                 </a>
             </li>
