@@ -24,7 +24,13 @@
                 <a href="{{ route('employee.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        {{ __('Employee_Management') }}
+                        {{ __('Users') }}
+                    </p>
+                    <li class="nav-item">
+                <a href="{{ route('employee.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        {{ __('Bsit3b Examination') }}
                     </p>
                 </a>
             </li>
